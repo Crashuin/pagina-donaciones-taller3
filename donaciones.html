@@ -72,11 +72,42 @@
                 <label for="segundo-nombre" class="form-label">Apellido(s)</label>
                 <input type="text" class="form-control" id="segundo-nombre" placeholder="Escriba su apellido(s)">
             </div>
-
+            <div class="col-md-6 mb-3">
+                <label for="edad" class="form-label">Edad</label>
+                <input type="text" class="form-control" id="edad" placeholder="Escriba su nombre(s)">
+            </div>
             <div class="col-md-6 mb-3">
                 <label for="fecha-nacimiento" class="form-label">Fecha de nacimiento</label>
                 <input type="date" class="form-control" id="fecha-nacimiento">
             </div>
+
+            <label for="genero" class="form-label">Genero</label>
+
+            <div class="col-md-3 mb-3">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="genero" id="genero1">
+                    <label class="form-check-label" for="genero1">
+                        Masculino
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="genero" id="genero1">
+                    <label class="form-check-label" for="genero1">
+                        Femenino
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="genero" id="genero1">
+                    <label class="form-check-label" for="genero1">
+                        Otro
+                    </label>
+                </div>
+            </div>
+
 
             <!-- Lugar de residencia-->
 
@@ -103,7 +134,7 @@
                 <label>Contacto</label>
             </div>
 
-            <div class="col-md-6 mb-3">
+            <div class="col-md-12 mb-3">
                 <label for="correo-electronico" class="form-label">Correo electrónico</label>
                 <input type="text" class="form-control" id="correo-electronico"
                     placeholder="Escriba su correo electronico">
@@ -111,6 +142,10 @@
             <div class="col-md-6 mb-3">
                 <label for="celular" class="form-label">Número de celular</label>
                 <input type="text" class="form-control" id="celular" placeholder="XX - XXX - XXX">
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="celular2" class="form-label">Número de celular 2 (opcional)</label>
+                <input type="text" class="form-control" id="celular2" placeholder="XX - XXX - XXX">
             </div>
 
             <!-- Donación -->
@@ -132,9 +167,10 @@
                 <label for="inputState" class="form-label">Medio de pago</label>
                 <select id="inputState" class="form-select">
                     <option selected disabled>Escoja una opción</option>
-                    <option>Pago efectivo</option>
+                    <option>Pago en efectivo</option>
                     <option>PSE</option>
-                    <option>Tarjeta de credito</option>
+                    <option>Tarjeta de crédito</option>
+                    <option>Tarjeta de débito</option>
                 </select>
             </div>
 
@@ -180,6 +216,15 @@
                 </div>
             </div>
 
+            <div class="col-12 fs-3 text-center">
+                <label>¿Quieres dejarnos un comentario?</label>
+            </div>
+
+            <div class="col-md-12 mb-3">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                    placeholder="Escribe tu mensaje"></textarea>
+            </div>
+            
             <div class="col-12 mb-4 text-center">
                 <button type="submit" class="btn btn-primary">Enviar formulario</button>
             </div>
