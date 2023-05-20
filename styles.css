@@ -49,6 +49,11 @@
     cursor: pointer;
 }
 
+.card {
+    border: none;
+}
+
+
 /*Texto*/
 
 
@@ -56,8 +61,6 @@
 
 .fondo-pie{
     background-color: #9DC08B;
-    margin-top: 8%;
-
 }
 
 
@@ -87,7 +90,7 @@
 
 footer {
     background: #40513B;
-    min-height: 100px;
+    min-height: 80px;
     
 }
 
